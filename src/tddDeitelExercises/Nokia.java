@@ -13,17 +13,17 @@ public class Nokia {
         System.out.println("press ok to go to Menu");
         String response = input.next();
 
-
-                int menu = phone.menu();
-                switch(menu){
-                    case 1:
-                        phone.phoneBook();
-                        break;
-                    case 2:
-                        phone.messages();
-                        break;
+//
+//                int menu = phone.menu();
+//                switch(menu){
+//                    case 1:
+//                        phone.phoneBook();
+//                        break;
+//                    case 2:
+//                        phone.messages();
+//                        break;
     }
 }
                 //phone.phoneBook(phone.menu());
 
-}
+
