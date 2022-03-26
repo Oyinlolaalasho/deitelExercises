@@ -45,7 +45,6 @@ public class RandomOperations {
                     correct = (double) int1 / int2;
                 }
             }
-
             System.out.printf("is: %d  %s  %d = ", int1, operand, int2);
             expected = input.nextInt();
 
