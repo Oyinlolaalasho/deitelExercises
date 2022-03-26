@@ -56,6 +56,7 @@ public class RandomOperations {
                 wrong++;
             }
             System.out.printf("Right = %d \t wrong = % d \n Total = %d", right, wrong, (right - wrong));
+
         }
     }
 }
