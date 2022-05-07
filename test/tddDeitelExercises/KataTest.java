@@ -83,7 +83,27 @@ public class KataTest {
         assertTrue(calculator.primeNumber(29));
         }
 
+    @Test
+    public void arrays() {
+    Kata calculator = new Kata();
+    int[] number = {10, 25, 5, 15, 20, 30, 40, 35, 50, 45};
+    assertEquals(50, Kata.getMaximumNumber(number));
     }
+
+    @Test
+    public void sumOfArrays(){
+    int[] number = {10, 25, 5, 15, 20, 30, 40, 35,50, 45};
+    assertEquals(275,Kata.sumOfArrays(number));
+    }
+
+    @Test
+    public void minimumNUmberInArrays() {
+    int[] number = {10, 25, 5, 15, 20, 30, 40, 35,50, 45};
+    assertEquals(5, Kata.minimumNUmberInArrays(number));
+    }
+
+
+}
 //    write a function that takes in number type int
 
 //    Write a function that takes an integer and returns true if the number is a prime number

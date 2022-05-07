@@ -13,7 +13,7 @@ public class Account {
 
         //given that i have an account with money via deposit plus amount added, withdraw will equal get balance;
         //givenm that i have account and account == 0,
-        //given that balance == 5k and withdrawal >5k return account
+        //given that balance == 5k and withdraw >5k return account
 
     public int withdraw(int dispense) {
          balance = balance - dispense;

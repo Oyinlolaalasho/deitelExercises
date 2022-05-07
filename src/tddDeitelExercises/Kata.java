@@ -92,7 +92,35 @@ public class Kata {
         }
         if (count <= 2) result = true;
         return result;
-           }
+    }
+
+    public static int getMaximumNumber(int[] number) {
+        int maximum = 0;
+        for (int i = 0; i < number.length; i++) {
+            if (number[i] > maximum) maximum = number[i];
+//            sum += number[i];
+        }
+        return maximum;
+    }
+
+    public static int sumOfArrays(int[] number) {
+        int sum = 0;
+        int maximum = 0;
+        for (int i = 0; i < number.length; i++) {
+            if (number[i] > maximum) maximum = number[i];
+            sum += number[i];
+        }
+        return sum;
+    }
+
+    public static int minimumNUmberInArrays(int[] number) {
+        int minimum = 0;
+        for (int i = 0; i < number.length; i++) {
+            if (minimum > number[i]) minimum = number[i];
+
+        }
+        return minimum;
+    }
 }
 
 

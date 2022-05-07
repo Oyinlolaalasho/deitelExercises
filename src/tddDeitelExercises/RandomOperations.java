@@ -13,9 +13,10 @@ public class RandomOperations {
         double correct = 0;
         double expected;
 
+        int result = 10;
         int right = 0;
         int wrong = 0;
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= result; i++) {
             int number = num.nextInt(0, 4);
 
             int int1 = num.nextInt(1, 100);
@@ -55,7 +56,7 @@ public class RandomOperations {
                 System.out.println("Wrong");
                 wrong++;
             }
-            System.out.printf("Right = %d \t wrong = % d \n Total = %d", right, wrong, (right - wrong));
+            System.out.printf("Right = %d \t wrong = % d \t Total = %d\n", right, wrong, (i++));
 
         }
     }

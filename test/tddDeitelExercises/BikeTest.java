@@ -1,15 +1,21 @@
 package tddDeitelExercises;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BikeTest {
 
+    private Bike bajaj;
+    @BeforeEach
+    public void setUp() {
+        bajaj = new Bike();
+    }
+
     @Test
     public void bikeSwitchTest() {
         //given
-        Bike bajaj = new Bike();
         //when
         bajaj.power("off");
         Boolean mode = bajaj.mode();
@@ -20,7 +26,6 @@ public class BikeTest {
     @Test
     //given
     public void onBikeSwitchTest() {
-        Bike bajaj = new Bike();
         //when
         bajaj.power("off");
         Boolean mode = bajaj.mode();
@@ -34,7 +39,6 @@ public class BikeTest {
     @Test
     //given
     public void acceleration1Test() {
-        Bike bajaj = new Bike();
         //when
         bajaj.acceleration();
         int speed = bajaj.speed();
@@ -46,7 +50,7 @@ public class BikeTest {
     @Test
     //given
     public void acceleration2Test() {
-        Bike bajaj = new Bike();
+
         //when
         bajaj.power("on");
         Boolean mode = bajaj.mode();
@@ -84,7 +88,7 @@ public class BikeTest {
     @Test
     //given
     public void acceleration3Test() {
-        Bike bajaj = new Bike();
+
         //when
         bajaj.power("on");
         Boolean mode = bajaj.mode();
@@ -125,7 +129,7 @@ public class BikeTest {
     @Test
     public void decelerationTest() {
         //given
-        Bike bajaj = new Bike();
+
         //when
         bajaj.power("on");
         Boolean mode = bajaj.mode();
@@ -134,12 +138,12 @@ public class BikeTest {
         bajaj.deceleration();
         int speed = bajaj.speed();
         //assert
-        assertEquals(22, speed);
+        assertEquals(19, speed);
     }
 
     @Test
     public void accelerateTest() {
-        Bike bajaj = new Bike();
+
 //        bajaj.isOn();
         int num = 1;
         while (num < 5) {
