@@ -7,11 +7,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class StackTest {
 
-    private Stack stack;
+    private MyStack stack;
 
     @BeforeEach
     void setUp() {
-        stack = new Stack();
+        stack = new MyStack();
     }
 
     @Test
